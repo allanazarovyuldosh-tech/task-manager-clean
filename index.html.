@@ -12,43 +12,7 @@
   </style>
 </head>
 <body>
-  <h1>Task Manager</h1>
-  <p>Добро пожаловать!</p>
-  <input id="taskInput" type="text" placeholder="Новая задача">
-  <button onclick="addTask()">Добавить</button>
 
-  <ul id="tasks"></ul>
-
-  <script>
-    function addTask() {
-      const input = document.getElementById('taskInput');
-      const text = input.value.trim();
-      if (!text) return;
-
-      const list = document.getElementById('tasks');
-      const item = document.createElement('li');
-
-      const span = document.createElement('span');
-      span.textContent = text;
-
-      const doneBtn = document.createElement('button');
-      doneBtn.textContent = '✔';
-      doneBtn.onclick = () => span.classList.toggle('done');
-
-      const delBtn = document.createElement('button');
-      delBtn.textContent = '✖';
-      delBtn.onclick = () => list.removeChild(item);
-
-      item.appendChild(span);
-      item.appendChild(doneBtn);
-      item.appendChild(delBtn);
-      list.appendChild(item);
-
-      input.value = '';
-    }
-  </script>
-</body>
-</html>
 
 
 
