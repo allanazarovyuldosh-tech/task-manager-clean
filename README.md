@@ -30,6 +30,9 @@ task-manager-clean/
 - Более современный дизайн
   ![Task Manager Demo](demo.gif)
 
+git add README.md demo.gif
+git commit -m "Добавлен GIF демонстрации"
+git push
 
 
 
