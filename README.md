@@ -29,7 +29,7 @@ task-manager-clean/
 - Возможность сортировки и фильтрации
 - Более современный дизайн
   ![Task Manager Demo](demo.gif)
-
+ Capture → Screen recording (GIF).
 
 
 
