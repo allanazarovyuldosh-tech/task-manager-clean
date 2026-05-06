@@ -14,10 +14,6 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1 {
-  text-align: center;
-}
-
 .task-input {
   display: flex;
   gap: 10px;
@@ -49,6 +45,4 @@ h1 {
   padding: 8px;
   border-radius: 4px;
 }
-.task-input { display:flex; gap:10px; }
-#addBtn { background:#0078d7; color:#fff; border:none; padding:8px; }
-#taskList li { background:#eee; margin:5px
+
