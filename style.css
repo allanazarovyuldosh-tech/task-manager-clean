@@ -70,6 +70,20 @@ body {
   background: #f0ad4e;
   color: #fff;
 }
+#taskList li {
+  background: #eee;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#taskList li span {
+  flex: 1;
+  margin-left: 10px;
+}
 
 
 
