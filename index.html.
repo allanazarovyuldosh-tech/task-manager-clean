@@ -18,7 +18,11 @@
   <script src="script.js"></script>
 </body>
 </html>
-
+<div class="task-input">
+  <input type="text" id="taskField" placeholder="Введите задачу...">
+  <button id="addBtn">Добавить</button>
+</div>
+<ul id="taskList"></ul>
 
 
 
