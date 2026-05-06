@@ -2,7 +2,7 @@ const addBtn = document.getElementById("addBtn");
 const taskField = document.getElementById("taskField");
 const taskList = document.getElementById("taskList");
 
-// Загружаем сохранённые задачи при старте
+// Загружаем сохранённые задачи
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 renderTasks();
 
@@ -42,6 +42,7 @@ function renderTasks() {
     taskList.appendChild(li);
   });
 }
+
 
 
 
