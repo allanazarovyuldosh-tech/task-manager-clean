@@ -49,13 +49,27 @@ body {
   align-items: center;
 }
 
+.task-buttons {
+  display: flex;
+  gap: 5px;
+}
+
 #taskList button {
-  background: #d9534f;
-  color: #fff;
   border: none;
   padding: 4px 8px;
   border-radius: 4px;
   cursor: pointer;
 }
+
+.delete-btn {
+  background: #d9534f;
+  color: #fff;
+}
+
+.edit-btn {
+  background: #f0ad4e;
+  color: #fff;
+}
+
 
 
