@@ -14,9 +14,11 @@
     </div>
     <ul id="taskList"></ul>
   </div>
+  <!-- Скрипт должен быть в корне -->
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
