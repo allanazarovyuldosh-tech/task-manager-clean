@@ -28,6 +28,7 @@ task-manager-clean/
 - Добавить категории задач
 - Возможность сортировки и фильтрации
 - Более современный дизайн
+<img width="208" height="182" alt="image" src="https://github.com/user-attachments/assets/e37a429a-cd87-4f67-a312-09ca052f6538" />
 
 
 
