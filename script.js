@@ -27,21 +27,44 @@ function renderTasks() {
   taskList.innerHTML = "";
   tasks.forEach((task, index) => {
     const li = document.createElement("li");
-    li.textContent = task;
+    const span = document.createElement("span");
+    span.textContent = task;
+
+    const btns = document.createElement("div");
+    btns.className = "task-buttons";
+
+    // Кнопка редактирования
+    const editBtn = document.createElement("button");
+    editBtn.textContent = "Редактировать";
+    editBtn.className = "edit-btn";
+    editBtn.onclick = () => {
+      const newText = prompt("Измените задачу:", task);
+      if (newText !== null && newText.trim() !== "") {
+        tasks[index] = newText.trim();
+        saveTasks();
+        renderTasks();
+      }
+    };
 
     // Кнопка удаления
     const delBtn = document.createElement("button");
     delBtn.textContent = "Удалить";
+    delBtn.className = "delete-btn";
     delBtn.onclick = () => {
       tasks.splice(index, 1);
       saveTasks();
       renderTasks();
     };
 
-    li.appendChild(delBtn);
+    btns.appendChild(editBtn);
+    btns.appendChild(delBtn);
+
+    li.appendChild(span);
+    li.appendChild(btns);
     taskList.appendChild(li);
   });
 }
+
 
 
 
